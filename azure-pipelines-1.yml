@@ -10,9 +10,10 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- checkout: self
 - task: Maven@3
   inputs:
-    mavenPomFile: 'C:\Java\gs-spring-boot\app'
+    mavenPomFile: 'app/pom.xml'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     codeCoverageToolOption: 'Cobertura'
