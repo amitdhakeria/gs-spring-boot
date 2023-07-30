@@ -12,7 +12,7 @@ pool:
 steps:
 - task: Maven@3
   inputs:
-    mavenPomFile: 'C:\Java\gs-spring-boot\app\pom.xml'
+    mavenPomFile: 'C:\Java\gs-spring-boot\app'
     mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     codeCoverageToolOption: 'Cobertura'
